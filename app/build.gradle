@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId "com.jayanth.jtv"
         minSdk 21
+        //noinspection OldTargetApi
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -46,8 +47,8 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation libs.androidx.appcompat
+    implementation libs.okhttp
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation platform(libs.androidx.compose.bom)
